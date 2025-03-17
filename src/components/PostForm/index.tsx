@@ -88,6 +88,7 @@ const PostForm: React.FC = () => {
 						</label>
 						<input
 							type="text"
+							maxLength={150}
 							autoFocus
 							id="title"
 							value={title}
@@ -107,6 +108,7 @@ const PostForm: React.FC = () => {
 						<textarea
 							id="content"
 							value={content}
+							maxLength={1000}
 							onChange={(e) => setContent(e.target.value)}
 							placeholder="Nhập nội dung bài viết..."
 							rows={8}

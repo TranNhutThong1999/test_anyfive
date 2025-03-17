@@ -43,10 +43,10 @@ const PostList = () => {
 								key={post.id}
 								className="hover:bg-gray-100 transition duration-200 border-b border-gray-300"
 							>
-								<td className="p-4 border-r border-gray-300 text-left w-1/6">
+								<td className="p-4 border-r border-gray-300 text-left w-1/6 break-words">
 									{post.number}
 								</td>
-								<td className="p-4 border-r border-gray-300 text-blue-500 ">
+								<td className="p-4 border-r border-gray-300 text-blue-500 break-words">
 									<Link
 										to={`/post/${post.id}`}
 										className="post-title-link cursor-pointer"
