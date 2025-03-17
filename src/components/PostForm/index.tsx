@@ -59,7 +59,7 @@ const PostForm: React.FC = () => {
 						},
 						{
 							title: id
-								? 'Câp nhật bài viết'
+								? 'Chỉnh sửa bài viết'
 								: 'Tạo mới bài viết',
 							current: true,
 						},
@@ -117,7 +117,7 @@ const PostForm: React.FC = () => {
 					<div className="flex gap-2 justify-end">
 						<button
 							type="submit"
-							className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition"
+							className="bg-blue-600 cursor-pointer text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition"
 						>
 							💾 Lưu
 						</button>

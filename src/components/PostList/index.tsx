@@ -20,7 +20,7 @@ const PostList = () => {
 				<div className="flex justify-end">
 					<button
 						onClick={() => navigate('/create')}
-						className=" bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition"
+						className=" bg-blue-600 cursor-pointer text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition"
 					>
 						Thêm mới
 					</button>

@@ -86,15 +86,15 @@ const PostDetail: React.FC = () => {
 				<div className="mt-8 flex justify-end gap-2">
 					<button
 						onClick={() => navigate(`/edit/${post.id}`)}
-						className="hover:cursor-pointer bg-blue-600 text-white px-5 py-3 rounded-lg shadow-md hover:bg-blue-700 transition"
+						className="cursor-pointer bg-blue-600 text-white px-5 py-3 rounded-lg shadow-md hover:bg-blue-700 transition"
 					>
 						✏️ Chỉnh sửa
 					</button>
 					<button
 						onClick={handleDelete}
-						className="hover:cursor-pointer bg-red-600 text-white px-5 py-3 rounded-lg shadow-md hover:bg-red-700 transition"
+						className="cursor-pointer bg-red-600 text-white px-5 py-3 rounded-lg shadow-md hover:bg-red-700 transition"
 					>
-						🗑️ Xóa bài viết
+						🗑️ Xóa
 					</button>
 				</div>
 			</div>
