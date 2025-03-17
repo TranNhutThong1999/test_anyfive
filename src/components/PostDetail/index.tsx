@@ -64,7 +64,7 @@ const PostDetail: React.FC = () => {
 					]}
 				/>
 
-				<h1 className="text-4xl font-bold mb-4 mt-4 text-gray-800">
+				<h1 className="text-4xl font-bold mb-4 mt-4 text-gray-800 break-words">
 					{post.title}
 				</h1>
 				<p className="text-gray-600 text-lg mb-2">
@@ -79,7 +79,7 @@ const PostDetail: React.FC = () => {
 					</span>{' '}
 					{post.views}
 				</p>
-				<div className="mt-6 p-4 bg-gray-50 border-l-4 border-blue-500 text-gray-700 rounded-lg">
+				<div className="mt-6 p-4 bg-gray-50 border-l-4 border-blue-500 text-gray-700 rounded-lg break-words">
 					{post.content}
 				</div>
 
