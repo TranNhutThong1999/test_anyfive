@@ -31,7 +31,7 @@ const PostForm: React.FC = () => {
 		e.preventDefault();
 
 		if (!title.trim() || !content.trim()) {
-			setFormError('⚠️ Vui lòng nhập đầy đủ tiêu đề và nội dung');
+			setFormError('⚠️ please enter the title and content');
 			return;
 		}
 		try {
@@ -43,7 +43,7 @@ const PostForm: React.FC = () => {
 				navigate(`/post/${newId}`);
 			}
 		} catch (error) {
-			setFormError('❌ Có lỗi xảy ra khi lưu bài viết');
+			setFormError('❌ Something wents wrong');
 		}
 	};
 
@@ -53,23 +53,19 @@ const PostForm: React.FC = () => {
 				<Breakcrumb
 					data={[
 						{
-							title: 'Danh sách bài viết',
+							title: 'Post list',
 							path: '/',
 							current: false,
 						},
 						{
-							title: id
-								? 'Chỉnh sửa bài viết'
-								: 'Tạo mới bài viết',
+							title: id ? 'Update post' : 'Create new post',
 							current: true,
 						},
 					]}
 				/>
 
 				<h2 className="text-3xl font-bold mb-6 text-gray-800 text-center">
-					{isEditMode
-						? '✏️ Chỉnh sửa bài viết'
-						: '📝 Tạo bài viết mới'}
+					{isEditMode ? '✏️ Update post' : '📝 Create new post'}
 				</h2>
 
 				{formError && (
@@ -93,7 +89,7 @@ const PostForm: React.FC = () => {
 							id="title"
 							value={title}
 							onChange={(e) => setTitle(e.target.value)}
-							placeholder="Nhập tiêu đề bài viết..."
+							placeholder="Enter the title..."
 							className="w-full p-3 border rounded-lg shadow-sm focus:ring-2 focus:ring-blue-400 focus:outline-none"
 						/>
 					</div>
@@ -110,7 +106,7 @@ const PostForm: React.FC = () => {
 							value={content}
 							maxLength={1000}
 							onChange={(e) => setContent(e.target.value)}
-							placeholder="Nhập nội dung bài viết..."
+							placeholder="Enter the content..."
 							rows={8}
 							className="w-full p-3 border rounded-lg shadow-sm focus:ring-2 focus:ring-blue-400 focus:outline-none"
 						/>
@@ -121,7 +117,7 @@ const PostForm: React.FC = () => {
 							type="submit"
 							className="bg-blue-600 cursor-pointer text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition"
 						>
-							💾 Lưu
+							💾 Save
 						</button>
 						{/* <button
 							type="button"

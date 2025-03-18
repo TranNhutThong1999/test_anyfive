@@ -53,12 +53,12 @@ const PostDetail: React.FC = () => {
 				<Breakcrumb
 					data={[
 						{
-							title: 'Danh sách bài viết',
+							title: 'Post list',
 							path: '/',
 							current: false,
 						},
 						{
-							title: 'Chi tiết bài viết',
+							title: 'detail',
 							current: true,
 						},
 					]}
@@ -69,13 +69,13 @@ const PostDetail: React.FC = () => {
 				</h1>
 				<p className="text-gray-600 text-lg mb-2">
 					<span className="font-semibold text-gray-700">
-						Số bài viết:
+						Number:
 					</span>{' '}
 					{post.number}
 				</p>
 				<p className="text-gray-600 text-lg mb-2">
 					<span className="font-semibold text-gray-700">
-						Lượt xem:
+						View:
 					</span>{' '}
 					{post.views}
 				</p>
@@ -88,13 +88,13 @@ const PostDetail: React.FC = () => {
 						onClick={() => navigate(`/edit/${post.id}`)}
 						className="cursor-pointer bg-blue-600 text-white px-5 py-3 rounded-lg shadow-md hover:bg-blue-700 transition"
 					>
-						✏️ Chỉnh sửa
+						✏️ Update
 					</button>
 					<button
 						onClick={handleDelete}
 						className="cursor-pointer bg-red-600 text-white px-5 py-3 rounded-lg shadow-md hover:bg-red-700 transition"
 					>
-						🗑️ Xóa
+						🗑️ Delete
 					</button>
 				</div>
 			</div>
